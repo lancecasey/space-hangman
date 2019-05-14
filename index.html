@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<title>Outer Space</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="css/style.css" />
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css"
+		/>
+        <link 
+            rel="stylesheet"
+            href="https://fonts.googleapis.com/css?family=Major+Mono+Display"  
+        />
+	</head>
+	<body>
+		<h1 id="alerts" class="alerts"></h1>
+
+		<div class="word">
+			<h1>Word:</h1>
+			<h1 id="word"></h1>
+		</div>
+		<div class="rocketArea">
+			<div id="rocketContainer" class="rocketCon">
+				<div class="flame"></div>
+				<div class="rocketBase"></div>
+				<div class="rocket">
+					<div class="window"></div>
+				</div>
+				<div class="rocketNose"></div>
+				<div class="bottomWing"></div>
+				<div class="topWing"></div>
+			</div>
+		</div>
+
+		<div class="letters">
+			<h2>Letters You've Guessed:</h2>
+			<h4 id="guessedLetters"></h4>
+		</div>
+
+		<div class="wins">
+			<h2>Wins:</h2>
+			<h4 id="wins"></h4>
+		</div>
+
+		<div class="countdown">
+			<h2>Guesses Remaining:</h2>
+			<h4 id="remainingGuesses"></h4>
+		</div>
+		<div class="moon"></div>
+
+		<div class="planet">
+			<div class="crater crater-one"></div>
+			<div class="crater crater-two"></div>
+			<div class="crater crater-three"></div>
+		</div>
+
+		<div class="saturn-container">
+			<div class="saturn"></div>
+			<div class="circle"></div>
+		</div>
+		<div id="stars"></div>
+        <div class="star-filante"></div>
+        
+		<script src="javascript/game.js"></script>
+		<script>
+			resetGame();
+			updateDisplay();
+		</script>
+		<script src="javascript/stars-for-background.js"></script>
+	</body>
+</html>
